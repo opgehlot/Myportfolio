@@ -1,0 +1,30 @@
+===========================================
+ENVIRONMENT VARIABLES SETUP
+===========================================
+
+Create a file named ".env" in the portfolio root directory with the following content:
+
+For Local MongoDB:
+------------------
+PORT=5000
+MONGODB_URI=mongodb://localhost:27017/portfolio
+NODE_ENV=development
+
+For MongoDB Atlas (Cloud):
+---------------------------
+PORT=5000
+MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/portfolio?retryWrites=true&w=majority
+NODE_ENV=development
+
+IMPORTANT:
+- Replace "username" and "password" with your MongoDB Atlas credentials
+- Replace "cluster.mongodb.net" with your actual cluster URL
+- Never commit the .env file to Git (it's already in .gitignore)
+
+Optional Frontend Environment Variable:
+----------------------------------------
+Create a .env file in the root for Vite (or add to existing .env):
+
+VITE_API_URL=http://localhost:5000/api
+
+===========================================
