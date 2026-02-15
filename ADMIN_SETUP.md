@@ -21,7 +21,7 @@ Run this command from the `backend` folder:
 
 ```bash
 cd backend
-node scripts/createAdmin.js opgehlot73@gmail.com op@123
+node scripts/createAdmin.js opgehlot73@gmail.com op@1234
 ```
 
 **Replace:**

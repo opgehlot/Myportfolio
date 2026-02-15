@@ -3,6 +3,7 @@ import { ThemeProvider } from "./context/ThemeContext";
 import Home from "./pages/Home";
 import AdminLogin from "./pages/AdminLogin";
 import AdminMessages from "./pages/AdminMessages";
+import ErrorBoundary from "./components/ErrorBoundary";
 import "./App.css";
 
 function App() {
@@ -15,7 +16,11 @@ function App() {
 
           {/* Admin (hidden) */}
           <Route path="/admin" element={<AdminLogin />} />
-          <Route path="/messages" element={<AdminMessages />} />
+          <Route path="/admin/messages" element={
+            <ErrorBoundary>
+              <AdminMessages />
+            </ErrorBoundary>
+          } />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

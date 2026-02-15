@@ -18,10 +18,8 @@ export default function AdminLogin() {
         password,
       });
 
-      localStorage.setItem("adminToken", res.data.token);
-
-      // ✅ Fixed: Now redirects to correct route "/messages"
-      navigate("/messages");
+      localStorage.setItem("token", res.data.token);
+      navigate("/");
       
 
     } catch (err) {

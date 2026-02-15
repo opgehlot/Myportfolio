@@ -28,9 +28,8 @@ const Contact = () => {
     setSuccess('');
 
     try {
-      // API endpoint - adjust the URL based on your setup
-      // For development: http://localhost:5000/api/contact
-      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/contact';
+      // Same endpoint admin panel reads from, so messages show in admin
+      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/messages';
       
       const response = await fetch(API_URL, {
         method: 'POST',

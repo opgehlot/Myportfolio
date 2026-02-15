@@ -86,7 +86,7 @@ const handleLogout = () => {
               onClick={(e) => handleNavClick(e, '#about')}
               className="text-gray-800 dark:text-white no-underline font-medium transition-colors duration-300 relative hover:text-[#667eea] after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-[#667eea] after:transition-all after:duration-300 hover:after:w-full"
             >
-              About
+              About Screen
             </a>
           </li>
           <li>
