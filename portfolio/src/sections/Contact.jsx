@@ -29,7 +29,7 @@ const Contact = () => {
 
     try {
       // Same endpoint admin panel reads from, so messages show in admin
-      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/messages';
+      const API_URL = import.meta.env.VITE_API_URL || 'https://myportfolio-rtxa.onrender.com/api/messages';
       
       const response = await fetch(API_URL, {
         method: 'POST',

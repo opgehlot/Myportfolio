@@ -13,7 +13,7 @@ export default function AdminLogin() {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:5000/api/admin/login", {
+      const res = await axios.post("https://myportfolio-rtxa.onrender.com/api/admin/login", {
         email,
         password,
       });
