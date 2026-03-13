@@ -1,4 +1,4 @@
-import { projects } from '../data/projectsData.js';
+import { projects } from '../data/projectsData';
 import Button from '../components/Button';
 
 const Projects = () => {

@@ -1,4 +1,4 @@
-import { skills } from '../data/skillsData.js';
+import { skills } from '../data/skillsData';
 
 const Skills = () => {
   // Group skills by category
