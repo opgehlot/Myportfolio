@@ -22,8 +22,8 @@ const Skills = () => {
               <h3 className="text-2xl md:text-xl font-semibold text-[#667eea] mb-6 text-center">{category}</h3>
               <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-4 max-w-4xl mx-auto md:grid-cols-[repeat(auto-fit,minmax(120px,1fr))] md:gap-3">
                 {categorySkills.map((skill) => (
-                  <div 
-                    key={skill.id} 
+                  <div
+                    key={skill.id}
                     className="p-5 md:p-4 bg-gray-50 dark:bg-[#0f1624] rounded-lg text-center font-medium text-gray-800 dark:text-white transition-all duration-300 border-2 border-transparent hover:-translate-y-1 hover:border-[#667eea] hover:shadow-[0_5px_15px_rgba(102,126,234,0.2)] hover:bg-white dark:hover:bg-[#16213e] md:text-sm"
                   >
                     {skill.name}
