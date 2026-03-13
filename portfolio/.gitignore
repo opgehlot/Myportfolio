@@ -28,5 +28,6 @@ dist-ssr
 .env.local
 .env.production
 
-# MongoDB
-data/
+# MongoDB local data directory only (not src/data)
+/data/
+!src/data/
