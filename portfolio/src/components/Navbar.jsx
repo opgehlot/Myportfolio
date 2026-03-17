@@ -49,7 +49,7 @@ const handleLogout = () => {
             onClick={(e) => handleNavClick(e, '#home')}
             className="text-2xl font-bold text-[#667eea] hover:text-[#764ba2] transition-colors duration-300 no-underline"
           >
-            MyPortfolio
+          Portfolio
           </a>
         </div>
         <div className="flex items-center gap-4">
